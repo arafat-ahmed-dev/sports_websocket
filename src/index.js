@@ -3,12 +3,12 @@ import express from "express";
 const app = express();
 const PORT = 8000;
 
-// JSON middleware
+// Middleware
 app.use(express.json());
 
-// Root GET route
+// Routes
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to the Express server!" });
+  res.json({ message: "Welcome to the Sports WebSocket Server!" });
 });
 
 // Start server
